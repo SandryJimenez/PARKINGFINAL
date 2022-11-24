@@ -108,11 +108,23 @@
     <Compile Include="FrmPrincipal.Designer.cs">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmTarifas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTarifas.Designer.cs">
+      <DependentUpon>FrmTarifas.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmVehiculo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmVehiculo.Designer.cs">
       <DependentUpon>FrmVehiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="PaginaPrincipal.cs">
       <SubType>Form</SubType>
@@ -137,8 +149,14 @@
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmTarifas.resx">
+      <DependentUpon>FrmTarifas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmVehiculo.resx">
       <DependentUpon>FrmVehiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PaginaPrincipal.resx">
       <DependentUpon>PaginaPrincipal.cs</DependentUpon>
@@ -190,6 +208,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\zarla-alquila-car-1x1-2400x2400-20220110-xr89q6q4hvkb9bdj3yhc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2022-11-21 at 11.04.41 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2022-11-21 at 11.08.06 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondotarifa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondomoradotarifas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logotarifa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tarifa.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets" Condition="Exists('..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets')" />

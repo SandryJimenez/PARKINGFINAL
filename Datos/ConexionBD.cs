@@ -11,19 +11,20 @@ namespace Datos
         private static ConexionBD Con = null;
         protected SqlConnection conexion;
         protected string cadenaConexion;
+
         public ConexionBD()
         {
             cadenaConexion = string.Format("Server={0};Database={1};Trusted_Connection=True;", ".\\SQLEXPRESS", "PARKING");
             conexion = new SqlConnection(cadenaConexion);
         }
-        public string AbrirConnexion()
+        public SqlConnection AbrirConnexion()
         {
             if (conexion.State == System.Data.ConnectionState.Open)
             {
                 CerrarConnexion();
             }
             conexion.Open();
-            return conexion.State.ToString();
+            return conexion;
         }
         public void CerrarConnexion()
         {
@@ -38,6 +39,9 @@ namespace Datos
             }
             return Con;
         }
+
+
+      
 
 
     }

@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Parqueadero.cs" />
     <Compile Include="Cliente.cs" />
+    <Compile Include="Tarifas.cs" />
     <Compile Include="Vehiculo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -44,6 +44,7 @@
     <Compile Include="Responce.cs" />
     <Compile Include="servicioParqueadero.cs" />
     <Compile Include="servicioCliente.cs" />
+    <Compile Include="servicioTarifa.cs" />
     <Compile Include="servicioVehiculo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

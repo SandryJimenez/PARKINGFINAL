@@ -11,7 +11,7 @@ namespace Entidades
         public int IdParqueadero { get; set; }
         public DateTime FechaSalida { get; set; }
         public int valorPorHora { get; set; }
-        public string HoraSalida { get; set; }
+        public DateTime HoraSalida { get; set; }
         public Double Total { get; set; }
       
 
@@ -24,12 +24,11 @@ namespace Entidades
         {
         }
 
-        public Parqueadero(int idParqueadero, DateTime fechaSalida, int valorPorHora, string horaSalida, double total)
+        public Parqueadero(int idParqueadero, DateTime fechaSalida, int valorPorHora, double total)
         {
             IdParqueadero = idParqueadero;
             FechaSalida = fechaSalida;
             this.valorPorHora = valorPorHora;
-            HoraSalida = horaSalida;
             Total = total;
         }
     }

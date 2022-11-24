@@ -63,6 +63,56 @@ namespace Presentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fondomoradotarifas {
+            get {
+                object obj = ResourceManager.GetObject("fondomoradotarifas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fondotarifa {
+            get {
+                object obj = ResourceManager.GetObject("fondotarifa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap login {
+            get {
+                object obj = ResourceManager.GetObject("login", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap login1 {
+            get {
+                object obj = ResourceManager.GetObject("login1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logotarifa {
+            get {
+                object obj = ResourceManager.GetObject("logotarifa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap png_transparent_car_rental_taxi_renting_budget_rent_a_car_car_angle_text_logo {
             get {
                 object obj = ResourceManager.GetObject("png-transparent-car-rental-taxi-renting-budget-rent-a-car-car-angle-text-logo", resourceCulture);
@@ -76,6 +126,36 @@ namespace Presentacion.Properties {
         internal static System.Drawing.Bitmap rentacarhello_scaled {
             get {
                 object obj = ResourceManager.GetObject("rentacarhello-scaled", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tarifa {
+            get {
+                object obj = ResourceManager.GetObject("tarifa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2022_11_21_at_11_04_41_PM {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2022-11-21 at 11.04.41 PM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2022_11_21_at_11_08_06_PM {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2022-11-21 at 11.08.06 PM", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

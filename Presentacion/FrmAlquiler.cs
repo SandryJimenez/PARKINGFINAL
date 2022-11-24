@@ -1,4 +1,5 @@
-﻿using Entidades;
+﻿using Datos;
+using Entidades;
 using Logica;
 using System;
 using System.Collections.Generic;
@@ -25,6 +26,32 @@ namespace Presentacion
             ver2(respuesta.Vehiculo);
         }
 
+
+        RepositorioParqueadero rv = new RepositorioParqueadero();
+        public void cargar_tipo_vehiculo()
+        {
+            cmbtipovehiculo.DataSource = rv.Tipovehiculo();
+            cmbtipovehiculo.DisplayMember = "tipo";
+            cmbtipovehiculo.ValueMember = "id";
+        }
+
+        void ver_vehiculo()
+        {
+            if (veh == null)
+            {
+                return;
+            }
+            txtplaca.Text = veh.PlacaVehiculo;
+            txtcedula.Text = veh.cedula;
+            txtmarca.Text = veh.Marca;
+            txtmodelo.Text = veh.modelo;
+            txtColor.Text = veh.color;
+            fechallegada.Text = Convert.ToString(veh.fechallegada);
+        }
+
+
+
+
         void ver2(Vehiculo veh)
         {
             if (veh == null)
@@ -41,17 +68,14 @@ namespace Presentacion
         private Parqueadero CrearPago()
         {
             //DateTime fechauno = Convert.ToDateTime(fechallegada.Value);
-            fechasalida.CustomFormat = ("hh:mm:ss tt");
-            DateTime fechauno = Convert.ToDateTime( DateTime.Now.ToString("yyyy-MM-dd"));
-            DateTime fechados = Convert.ToDateTime(DateTime.Now.ToString("yyyy-MM-dd"));
+            DateTime fechauno = Convert.ToDateTime( fechallegada.Value);
+            DateTime fechados = Convert.ToDateTime(fechasalida.Value);
             //DateTime fechados = Convert.ToDateTime(fechasalida.Value);
             TimeSpan diffechas = fechados - fechauno;
             Double horas = diffechas.TotalHours;
-            horasalida.CustomFormat = ("hh:mm:ss tt");
-            string calhora = DateTime.Now.ToString("hh:mm:ss tt");
             Random rnd = new Random();
             string random = txtcodfactura.Text = Convert.ToString(rnd.Next(0, 25000));
-            Double Total1 =Convert.ToInt32(datevalorhora.Value) * horas;
+            Double Total1 =Convert.ToInt32(txtvalorhora.Text) * horas;
             double resultado = Math.Round(Total1);
             DateTime formatohora = DateTime.Now;
         
@@ -64,10 +88,9 @@ namespace Presentacion
                 Marca = txtmarca.Text,
                 modelo = txtmodelo.Text,
                 color = txtColor.Text,
-                fechallegada =Convert.ToDateTime( fechasalida.Text),
-                valorPorHora = (int)datevalorhora.Value,
-                FechaSalida = Convert.ToDateTime(fechasalida.Text),
-                HoraSalida = Convert.ToString(calhora),
+                fechallegada =fechallegada.Value,
+                valorPorHora =int.Parse( txtvalorhora.Text),
+                FechaSalida = fechasalida.Value,
                 Total = resultado,
             };
             txttotal.Text = parqueo.Total.ToString();

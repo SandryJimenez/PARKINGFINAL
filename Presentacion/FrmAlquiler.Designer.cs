@@ -37,7 +37,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.txttotal = new System.Windows.Forms.TextBox();
             this.BtnGuardar = new System.Windows.Forms.Button();
@@ -47,19 +46,19 @@
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtmodelo = new System.Windows.Forms.TextBox();
-            this.fechallegada = new System.Windows.Forms.DateTimePicker();
             this.txtmarca = new System.Windows.Forms.TextBox();
+            this.fechallegada = new System.Windows.Forms.DateTimePicker();
             this.label17 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.horasalida = new System.Windows.Forms.DateTimePicker();
-            this.datevalorhora = new System.Windows.Forms.NumericUpDown();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtvalorhora = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.cmbtipovehiculo = new System.Windows.Forms.ComboBox();
             this.fechasalida = new System.Windows.Forms.DateTimePicker();
             this.label10 = new System.Windows.Forms.Label();
             this.txtcodfactura = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.datevalorhora)).BeginInit();
             this.SuspendLayout();
             // 
             // txtcedula
@@ -83,17 +82,17 @@
             // 
             // BtnBuscar
             // 
-            this.BtnBuscar.BackColor = System.Drawing.Color.White;
+            this.BtnBuscar.BackColor = System.Drawing.Color.Transparent;
             this.BtnBuscar.FlatAppearance.BorderSize = 0;
             this.BtnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnBuscar.ForeColor = System.Drawing.Color.Black;
             this.BtnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("BtnBuscar.Image")));
             this.BtnBuscar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnBuscar.Location = new System.Drawing.Point(328, 123);
+            this.BtnBuscar.Location = new System.Drawing.Point(328, 117);
             this.BtnBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.BtnBuscar.Name = "BtnBuscar";
-            this.BtnBuscar.Size = new System.Drawing.Size(76, 56);
+            this.BtnBuscar.Size = new System.Drawing.Size(72, 52);
             this.BtnBuscar.TabIndex = 13;
             this.BtnBuscar.Text = "Buscar";
             this.BtnBuscar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -135,7 +134,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold);
-            this.label7.Location = new System.Drawing.Point(4, 161);
+            this.label7.Location = new System.Drawing.Point(6, 16);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(118, 19);
@@ -146,29 +145,18 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(5, 49);
+            this.label8.Location = new System.Drawing.Point(18, 48);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(106, 19);
             this.label8.TabIndex = 24;
             this.label8.Text = "Fecha Salida:";
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(18, 16);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(93, 19);
-            this.label11.TabIndex = 29;
-            this.label11.Text = "Valor Hora:";
-            // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(51, 133);
+            this.label12.Location = new System.Drawing.Point(67, 179);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(51, 19);
@@ -178,7 +166,7 @@
             // txttotal
             // 
             this.txttotal.Enabled = false;
-            this.txttotal.Location = new System.Drawing.Point(117, 119);
+            this.txttotal.Location = new System.Drawing.Point(133, 165);
             this.txttotal.Margin = new System.Windows.Forms.Padding(2);
             this.txttotal.Multiline = true;
             this.txttotal.Name = "txttotal";
@@ -188,7 +176,7 @@
             // BtnGuardar
             // 
             this.BtnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnGuardar.Location = new System.Drawing.Point(533, 263);
+            this.BtnGuardar.Location = new System.Drawing.Point(564, 324);
             this.BtnGuardar.Margin = new System.Windows.Forms.Padding(2);
             this.BtnGuardar.Name = "BtnGuardar";
             this.BtnGuardar.Size = new System.Drawing.Size(129, 40);
@@ -250,9 +238,7 @@
             this.groupBox1.Controls.Add(this.txtplaca);
             this.groupBox1.Controls.Add(this.txtmodelo);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.fechallegada);
             this.groupBox1.Controls.Add(this.txtmarca);
             this.groupBox1.Location = new System.Drawing.Point(23, 102);
             this.groupBox1.Name = "groupBox1";
@@ -269,15 +255,6 @@
             this.txtmodelo.Size = new System.Drawing.Size(129, 20);
             this.txtmodelo.TabIndex = 35;
             // 
-            // fechallegada
-            // 
-            this.fechallegada.Location = new System.Drawing.Point(127, 160);
-            this.fechallegada.Margin = new System.Windows.Forms.Padding(2);
-            this.fechallegada.Name = "fechallegada";
-            this.fechallegada.Size = new System.Drawing.Size(145, 20);
-            this.fechallegada.TabIndex = 21;
-            this.fechallegada.Value = new System.DateTime(2022, 10, 30, 7, 30, 0, 0);
-            // 
             // txtmarca
             // 
             this.txtmarca.Enabled = false;
@@ -286,6 +263,15 @@
             this.txtmarca.Name = "txtmarca";
             this.txtmarca.Size = new System.Drawing.Size(129, 20);
             this.txtmarca.TabIndex = 19;
+            // 
+            // fechallegada
+            // 
+            this.fechallegada.Location = new System.Drawing.Point(129, 15);
+            this.fechallegada.Margin = new System.Windows.Forms.Padding(2);
+            this.fechallegada.Name = "fechallegada";
+            this.fechallegada.Size = new System.Drawing.Size(137, 20);
+            this.fechallegada.TabIndex = 21;
+            this.fechallegada.Value = new System.DateTime(2022, 11, 22, 0, 0, 0, 0);
             // 
             // label17
             // 
@@ -299,70 +285,66 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.horasalida);
-            this.groupBox2.Controls.Add(this.datevalorhora);
+            this.groupBox2.Controls.Add(this.label13);
+            this.groupBox2.Controls.Add(this.txtvalorhora);
             this.groupBox2.Controls.Add(this.label9);
+            this.groupBox2.Controls.Add(this.cmbtipovehiculo);
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.txttotal);
             this.groupBox2.Controls.Add(this.fechasalida);
-            this.groupBox2.Controls.Add(this.label11);
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.fechallegada);
             this.groupBox2.Location = new System.Drawing.Point(435, 54);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(305, 197);
+            this.groupBox2.Size = new System.Drawing.Size(305, 246);
             this.groupBox2.TabIndex = 42;
             this.groupBox2.TabStop = false;
             // 
-            // horasalida
+            // label13
             // 
-            this.horasalida.Location = new System.Drawing.Point(117, 85);
-            this.horasalida.Name = "horasalida";
-            this.horasalida.Size = new System.Drawing.Size(135, 20);
-            this.horasalida.TabIndex = 39;
-            this.horasalida.Value = new System.DateTime(2022, 10, 30, 0, 0, 0, 0);
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold);
+            this.label13.Location = new System.Drawing.Point(20, 129);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(105, 19);
+            this.label13.TabIndex = 37;
+            this.label13.Text = "Valor x Hora:";
             // 
-            // datevalorhora
+            // txtvalorhora
             // 
-            this.datevalorhora.Location = new System.Drawing.Point(118, 20);
-            this.datevalorhora.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.datevalorhora.Minimum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.datevalorhora.Name = "datevalorhora";
-            this.datevalorhora.Size = new System.Drawing.Size(135, 20);
-            this.datevalorhora.TabIndex = 33;
-            this.datevalorhora.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.datevalorhora.Value = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
+            this.txtvalorhora.Location = new System.Drawing.Point(133, 125);
+            this.txtvalorhora.Multiline = true;
+            this.txtvalorhora.Name = "txtvalorhora";
+            this.txtvalorhora.Size = new System.Drawing.Size(135, 32);
+            this.txtvalorhora.TabIndex = 36;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold);
-            this.label9.Location = new System.Drawing.Point(11, 87);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Location = new System.Drawing.Point(6, 92);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(100, 19);
-            this.label9.TabIndex = 38;
-            this.label9.Text = "Hora Salida:";
+            this.label9.Size = new System.Drawing.Size(119, 19);
+            this.label9.TabIndex = 35;
+            this.label9.Text = "Tipo Vehiculo: ";
+            // 
+            // cmbtipovehiculo
+            // 
+            this.cmbtipovehiculo.FormattingEnabled = true;
+            this.cmbtipovehiculo.Location = new System.Drawing.Point(133, 92);
+            this.cmbtipovehiculo.Name = "cmbtipovehiculo";
+            this.cmbtipovehiculo.Size = new System.Drawing.Size(135, 21);
+            this.cmbtipovehiculo.TabIndex = 34;
             // 
             // fechasalida
             // 
-            this.fechasalida.Location = new System.Drawing.Point(118, 49);
+            this.fechasalida.Location = new System.Drawing.Point(131, 48);
             this.fechasalida.Margin = new System.Windows.Forms.Padding(2);
             this.fechasalida.Name = "fechasalida";
             this.fechasalida.Size = new System.Drawing.Size(135, 20);
             this.fechasalida.TabIndex = 22;
-            this.fechasalida.Value = new System.DateTime(2022, 10, 30, 0, 0, 0, 0);
+            this.fechasalida.Value = new System.DateTime(2022, 11, 22, 0, 0, 0, 0);
             // 
             // label10
             // 
@@ -388,7 +370,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(787, 356);
+            this.ClientSize = new System.Drawing.Size(803, 503);
             this.Controls.Add(this.txtcodfactura);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.groupBox2);
@@ -404,7 +386,6 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.datevalorhora)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -420,7 +401,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox txttotal;
         private System.Windows.Forms.Button BtnGuardar;
@@ -431,14 +411,15 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.NumericUpDown datevalorhora;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DateTimePicker fechallegada;
         private System.Windows.Forms.DateTimePicker fechasalida;
         private System.Windows.Forms.TextBox txtmodelo;
         private System.Windows.Forms.TextBox txtmarca;
-        private System.Windows.Forms.DateTimePicker horasalida;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtcodfactura;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox txtvalorhora;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox cmbtipovehiculo;
     }
 }
