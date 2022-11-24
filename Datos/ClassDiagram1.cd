@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Datos.AlquilerRepository">
+    <Position X="7.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAABAAAA=</HashCode>
+      <FileName>AlquilerRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Datos.Conexion">
+    <Position X="7" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAiAAAAAAAAAAABEAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Conexion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Datos.ConexionBD" Collapsed="true">
+    <Position X="9.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAgAAAAAAAAAAABEAAAAAAAAABAAAAAE=</HashCode>
+      <FileName>ConexionBD.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Datos.RepositorioVehiculos">
+    <Position X="11" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAQIAAAAAAAAAAAAAIAAAAAIIAAAAAAAAAA=</HashCode>
+      <FileName>RepositorioVehiculos.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Datos.BDatosOracle.RepositorioClientes">
+    <Position X="12.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAQAQAAAAAAAAAAAAAAIAAAAAIIAAAAAAAAAA=</HashCode>
+      <FileName>BDatosOracle\RepositorioClientes.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Datos.ICrudAlquiler&lt;Alquiler&gt;">
+    <Position X="16.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAABAAAA=</HashCode>
+      <FileName>ICrudAlquiler.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Datos.ICRUDVehiculo&lt;V&gt;">
+    <Position X="15" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQIAAAAAAAAAAAAAIAAAAAIIAAAAAAAAAA=</HashCode>
+      <FileName>ICRUDVehiculo.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Datos.BDatosOracle.ICRUDCLIENTE&lt;T&gt;">
+    <Position X="15" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAQAAAAAAAAAAAAAAIAAAAAIIAAAAAAAAAA=</HashCode>
+      <FileName>BDatosOracle\ICRUDCLIENTE.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="DatosDAO.ICRUD&lt;T&gt;">
+    <Position X="16.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAQAAAAAAAAAAAAAAIAAAAAIIAAAAAAAAAA=</HashCode>
+      <FileName>ICRUD.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
